@@ -1,0 +1,29 @@
+.navbar .navbar-expand-lg .navbar .fixed-top .bg-body-tertiary{
+    top: 20px;
+  }
+  .bg-body-tertiary {
+ --bs-bg-opacity: 1;
+ background-color: rgb(248 249 250 / 0%) !important;
+       }
+       .navbar-brand{
+        color: #af2332 !important;
+        text-shadow:0 0 2px black;
+       }
+       .bg{
+        background-color: gray;
+        padding-top: 138px;
+        display: flex;
+        justify-content: center;
+       }
+       .imgside{
+        padding-left: 850px;
+        height: 250px;
+        position: relative;
+        right: 0px;
+       }
+       .subhead{
+        text-shadow: 0 0 50px rgb(255, 255, 255);
+       }
+       .para1{
+       color: white;
+       }

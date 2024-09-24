@@ -1,0 +1,229 @@
+.navbar .navbar-expand-lg .navbar .fixed-top .bg-body-tertiary{
+    top: 20px;
+  }
+  .bg-body-tertiary {
+ 
+ background-color: rgb(248 249 250 / 0%) !important;
+       }
+       .text-danger-emphasis {
+        color: #af2332 !important;
+        text-shadow:0 0 2px black;
+    }
+    .navbar-expand-lg {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  }
+    .carousel.slide{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+      .experiencekerala{
+       display: flex;
+       justify-content: center;
+       color: rgb(8, 8, 117);
+       margin-left: 50px;
+       margin-top: 50px;
+       margin-right: 50px;
+       text-shadow:0 0 10px rgb(91, 17, 17) ;
+      }
+      .pre{
+        display: flex;
+       justify-content: center;
+       color: rgb(8, 8, 117);
+      }
+      .distirct{
+        display: flex;
+        flex-wrap: wrap;
+       text-decoration:none;
+       justify-content: space-between;
+       color: rgb(8, 8, 117);
+      }
+      .summer{
+        font-size: larger;
+      }
+      .card-col{
+       display: flex;
+       justify-content:center;
+       position: relative;
+      
+       padding: 67px;
+       background-color:beige;
+       
+      }
+      .card:not(:first-child){
+       margin-left: -120px;
+      }
+      .card:hover{
+       transform: translateX(-40px);
+      }
+      .flex-container{
+       
+          display:flex;
+          flex-wrap: wrap;
+      }
+      .btn-experience{
+        display: flex;
+        justify-content: center;
+      }
+      .img-fluid .topdest{
+        height: 219px;
+        width: 219px;
+        padding: 9px;
+        display: inline-block;
+      }
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+        width: 311px;
+        padding: 10px;
+    }
+      .destination{
+        position: relative;
+        display: inline-block;
+
+      }
+      .destination:hover{
+        transform: scale(1.1);
+      }
+      .text{
+        color: white;
+        font-size: large;
+        position: absolute;
+        top: 80%;
+        left:0%; 
+        text-shadow: 0 0 10px black;
+        
+        display: inline-block;
+       
+      }
+      .box1{
+        padding-left: 68px;
+        padding-right: 50px;
+      }
+      .box2{
+        padding-left:92px ;
+      }
+      .box3{
+        padding-left:61px ;
+      }
+      .box4{
+        padding-left:107px ;
+      }
+      .box5{
+        padding-left:123px ;
+      }
+      .box6{
+        padding-left:62px ;
+      }
+      .box7{
+        padding-left: 58px;
+      }
+      .box8{
+        padding-left:47px ;
+      }
+      .space{
+       left: 20px;
+      }
+      .btn-Explore{
+        display: flex;
+        justify-content: center;
+        padding: 53px;
+        background-color:beige;
+      }
+      .things-to-do{
+        position: relative;
+        display: inline-block;
+      }
+      .sqr1{
+        padding-left: 86px;
+      }
+      .sqr2{
+        padding-left: 181px;
+      }
+      .sqr3{
+        padding-left: 167px;
+      }
+      .sqr4{
+        padding-left: 197px;
+      }
+      .sqr5{
+        padding-left: 144px;
+      }
+      .sqr6{
+        padding-left:173px;
+      }
+      .img-fluid.things{
+        height: 236px;
+        width: 418px;
+        padding: 9px;
+        display: inline-block;
+        border-radius: 20px;
+      }
+      .img-fluid.things:hover{
+        transform: translateY(-10px);
+      }
+      .bg-things{
+       
+        background-image: url("hills\ and\ view.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+      }
+      .thingstodohead{
+        display: flex;
+       justify-content: center;
+       color: rgb(8, 8, 117);
+       margin-left: 50px;
+       margin-top: 80px;
+       margin-right: 50px;
+       margin-bottom: 20px;
+       text-shadow:0 0 10px rgb(91, 17, 17) ;
+      }
+      .things-to-do{
+        position: relative;
+        display: inline-block;
+      }
+      /* footer  */
+.container-1{
+  max-width: 1170px;
+  margin: auto;
+}
+.row-1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-1{
+  background-color: whitesmoke;
+  padding: 70px 0;
+}
+.footer-col-1{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col-1 h4{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;    
+}
+.footer-col-1 h4::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: palevioletred;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col-1 ul li a{
+  color: darkblue;
+  text-decoration: none;
+}
+.footer-col-1 ul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+      
