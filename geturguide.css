@@ -1,4 +1,4 @@
-.navbar .navbar-expand-lg .navbar .fixed-top .bg-body-tertiary{
+/* .navbar .navbar-expand-lg .navbar .fixed-top .bg-body-tertiary{
     top: 20px;
   }
   .bg-body-tertiary {
@@ -12,60 +12,207 @@
     .navbar-expand-lg {
       flex-wrap: wrap;
       justify-content: flex-start;
+  } */
+   /* Adjusting top margin for the fixed navbar */
+.navbar.fixed-top {
+  top: 20px;
+}
+
+/* Ensuring the background is transparent */
+.bg-body-tertiary {
+  background-color: rgba(248, 249, 250, 0) !important; 
+}
+
+/* Styling the text */
+.text-danger-emphasis {
+  color: #af2332 !important;
+  text-shadow: 0 0 2px black;
+}
+
+
+.navbar-expand-lg {
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+}
+
+
+@media (max-width: 992px) { 
+  .navbar .navbar-collapse {
+      background-color: rgba(248, 249, 250, 0.95); 
   }
+
+  .navbar .navbar-nav {
+      margin-top: 10px; 
+  }
+
+  .navbar .navbar-nav .nav-link {
+      padding: 10px; 
+      text-align: center; 
+  }
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  will-change: transform;
+  margin: 0; 
+}
+
+@media (max-width: 768px) { 
+  .navbar .navbar-toggler {
+      margin: 0; 
+  }
+
+  .navbar .dropdown-menu {
+      position: static; 
+      float: none; 
+  }
+
+  .navbar .dropdown-item {
+      padding: 8px 16px; 
+  }
+}
+
     .carousel.slide{
       display: flex;
       flex-wrap: wrap;
       
   }
-      .experiencekerala{
-       display: flex;
-       justify-content: center;
-       color: rgb(8, 8, 117);
-       margin-left: 50px;
-       margin-top: 50px;
-       margin-right: 50px;
-       text-shadow:0 0 10px rgb(91, 17, 17) ;
-      }
-      .pre{
-        display: flex;
-       justify-content: center;
-       color: rgb(8, 8, 117);
-      }
-      .distirct{
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Smaller font size for paragraph */
+    }
+}
+      
+      .district{
         display: flex;
         flex-wrap: wrap;
        text-decoration:none;
        justify-content: space-between;
        color: rgb(8, 8, 117);
+       padding-left: 1px;
+       padding-right: 1px;
+       font-size: small;
       }
       .summer{
         font-size: larger;
       }
-      .card-col{
-       display: flex;
-       justify-content:center;
-       position: relative;
-      
-       padding: 67px;
-       background-color:beige;
-       
-      }
-      .card:not(:first-child){
-       margin-left: -120px;
-      }
-      .card:hover{
-       transform: translateX(-40px);
-      }
-      .flex-container{
-       
-          display:flex;
-          flex-wrap: wrap;
-      }
-      .btn-experience{
+      .experiencekerala{
         display: flex;
         justify-content: center;
+        color: rgb(8, 8, 117);
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-right: 50px;
+        text-shadow:0 0 10px rgb(91, 17, 17) ;
+       }
+       .pre{
+        display: flex;
+       justify-content: center;
+       color: rgb(8, 8, 117);
       }
+      
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .card-col {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 67px;
+        background-color: beige;
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 18rem;
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+    }
+    
+    .card:not(:first-child) {
+        margin-left: -120px;
+    }
+    
+    .card:hover {
+        transform: translateX(-40px);
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .card-body {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+    
+    .btn-experience {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .card:not(:first-child) {
+            margin-left: 0;
+        }
+    
+        .card:hover {
+          transform: scale(1.2);
+        }
+    
+        .card-col {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
       .img-fluid .topdest{
         height: 219px;
         width: 219px;
@@ -86,6 +233,40 @@
       .destination:hover{
         transform: scale(1.1);
       }
+        
+    @media (max-width: 768px) {
+      .destination:not(:first-child) {
+          display: flex;
+          justify-content: center;
+      }
+  
+      .destination:hover {
+        transform: scale(1.2);
+      }
+  
+      .img-fluid .topdest {
+          flex-direction: column;
+          align-items: center;
+      }
+      
+  }
+  @media (max-width: 900px) {
+    .destination:not(:first-child) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .destination:hover {
+      transform: scale(1.2);
+    }
+
+    .img-fluid .topdest {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+ 
       .text{
         color: white;
         font-size: large;
@@ -99,7 +280,7 @@
       }
       .box1{
         padding-left: 68px;
-        padding-right: 50px;
+        /* padding-right: 50px; */
       }
       .box2{
         padding-left:92px ;
@@ -131,99 +312,199 @@
         padding: 53px;
         background-color:beige;
       }
-      .things-to-do{
-        position: relative;
-        display: inline-block;
-      }
-      .sqr1{
-        padding-left: 86px;
-      }
-      .sqr2{
-        padding-left: 181px;
-      }
-      .sqr3{
-        padding-left: 167px;
-      }
-      .sqr4{
-        padding-left: 197px;
-      }
-      .sqr5{
-        padding-left: 144px;
-      }
-      .sqr6{
-        padding-left:173px;
-      }
-      .img-fluid.things{
-        height: 236px;
-        width: 418px;
-        padding: 9px;
-        display: inline-block;
-        border-radius: 20px;
-      }
-      .img-fluid.things:hover{
-        transform: translateY(-10px);
-      }
-      .bg-things{
-       
-        background-image: url("hills\ and\ view.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        
-      }
-      .thingstodohead{
-        display: flex;
-       justify-content: center;
-       color: rgb(8, 8, 117);
-       margin-left: 50px;
-       margin-top: 80px;
-       margin-right: 50px;
-       margin-bottom: 20px;
-       text-shadow:0 0 10px rgb(91, 17, 17) ;
-      }
-      .things-to-do{
-        position: relative;
-        display: inline-block;
-      }
-      /* footer  */
-.container-1{
-  max-width: 1170px;
-  margin: auto;
+     /* General Styles */
+.things-todo-container {
+  padding: 20px;
+  background-image: url("hills and view.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.row-1{
+
+.thingstodohead {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(8, 8, 117);
+  text-shadow: 0 0 10px rgb(91, 17, 17);
+}
+
+.cards-containerthing {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.footer-1{
-  background-color: whitesmoke;
-  padding: 70px 0;
+
+.cardthing {
+  position: relative;
+  margin: 10px;
+  width: 30%; /* Ensure that cards are 3 in a row */
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9); /* Background for text */
 }
-.footer-col-1{
-  width: 25%;
-  padding: 0 15px;
+
+.cardthing img {
+  width: 100%;
+  height: 236px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-.footer-col-1 h4{
-  font-size: 18px;
-  color: black;
-  margin-bottom: 30px;
-  font-weight: 500;
-  position: relative;    
+.cardthing:not(:first-child) {
+  margin-left: 4px;
 }
-.footer-col-1 h4::before{
-  content:'';
+.cardthing:hover img {
+  transform: translateY(-10px);
+}
+
+.card-text {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); 
   position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: palevioletred;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
+  bottom: 0;
+  width: 100%;
+  color: #000;
 }
-.footer-col-1 ul li a{
-  color: darkblue;
+
+.btn-Explore {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .cardthing {
+    width: 45%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cardthing {
+    width: 100%; 
+  }
+
+  .thingstodohead {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .btn-Explore {
+    margin-top: 10px;
+  }
+}
+.img-fluid.things{
+  height: 236px;
+  width: 418px;
+  padding: 9px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.img-fluid.things:hover{
+  transform: translateY(-10px);
+}
+.bg-things{
+ 
+  background-image: url("hills\ and\ view.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.fest{
+  display: flex;
+ justify-content: center;
+ color: rgb(8, 8, 117);
+ margin-left: 50px;
+ margin-top: 80px;
+ margin-right: 50px;
+ margin-bottom: 20px;
+ text-shadow:0 0 10px rgb(91, 17, 17) ;
+}
+        
+   
+.footer-container {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #ecf0f1;
+  font-size: 20px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
   text-decoration: none;
+  color: #ecf0f1;
+  font-size: 14px;
+  transition: color 0.3s;
 }
-.footer-col-1 ul li a:hover{
-    color: black;
-    text-decoration: none;
+
+.footer-section ul li a:hover {
+  color: #f39c12;
 }
-      
+
+.social-links a {
+  color: #ecf0f1;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #7f8c8d;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
