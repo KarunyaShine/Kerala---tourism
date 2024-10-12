@@ -241,7 +241,7 @@
     margin-top: 30px;
   }
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .card-col {
     padding: 120px;
     width: 100%; 
@@ -257,7 +257,7 @@
     font-size: 0.8rem;
     /* padding: 8px 12px; */
   }
-}
+} */
 
 
  
