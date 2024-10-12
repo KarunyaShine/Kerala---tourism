@@ -241,8 +241,8 @@
     margin-top: 30px;
   }
 }
-/* @media (max-width: 576px) {
-  .card-col {
+@media (max-width: 576px) {
+  /* .card-col {
     padding: 120px;
     width: 100%; 
     margin-bottom: 20px;
@@ -256,8 +256,19 @@
   .btn-primary {
     font-size: 0.8rem;
     /* padding: 8px 12px; */
+    .card:not(:first-child) {
+      margin-left: -80px;
   }
-} */
+  
+  .card:hover {
+      transform: translateX(-180px);
+  }
+ .card {
+  height: 50%;
+  width: 50%;
+ }
+  } 
+
 
 
  
