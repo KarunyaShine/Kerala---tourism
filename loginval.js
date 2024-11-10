@@ -30,3 +30,6 @@ function validation()
             return true;
         }
 }
+// x='2'
+// y='1'
+// console.log(x+y)

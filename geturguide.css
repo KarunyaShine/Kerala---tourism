@@ -1,88 +1,101 @@
 
 .navbar.fixed-top {
-  top: 20px;
+  top: 0; /* Ensure the navbar is flush with the top */
 }
 
 .bg-body-tertiary {
   background-color: rgba(248, 249, 250, 0) !important; 
 }
+
 .text-danger-emphasis {
   color: #af2332 !important;
   text-shadow: 0 0 2px black;
 }
 
-
 .navbar-expand-lg {
   flex-wrap: wrap; 
   justify-content: flex-start; 
 }
+
 .dropdown-menu {
   position: absolute;
   will-change: transform;
   margin: 0; 
 }
 
-@media (max-width: 576px) {
-  .navbar-brand {
-    font-size: 1.2rem;
+Responsive adjustments
+@media (max-width: 412px) {
+  .navbar {
+    padding: 10px 5px; /* Adjusts padding for smaller screens */
+  }
+  .navbar.fixed-top {
+    top: 0; /* Ensure the navbar is flush with the top */
+    width: 50%; /* Ensure the navbar takes the full width */
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.9rem; /* Smaller font size for links */
+    padding: 8px 5px; /* Adjust padding for nav links */
   }
 
-  .navbar .navbar-toggler {
-    margin: 10px;
+  .navbar-toggler {
+    padding: 5px; /* Adjust size of the toggler button */
+    margin-left: auto; /* Aligns the button to the right */
+  }
+  
+  .navbar-collapse {
+    text-align: center; /* Centers text in the navbar */
+    width: 50%; /* Ensure the collapse takes full width */
   }
 
-  .navbar .navbar-nav .nav-link {
-    font-size: 0.9rem;
-    padding: 5px;
+  .form-control {
+    margin-top: 10px; /* Adds margin to the search bar */
+    width: 50%; /* Wider search bar on small screens */
   }
-
-  .dropdown-menu {
-    font-size: 0.8rem;
+  
+  .btn-outline-success {
+    width: 50%; /* Full-width search button */
   }
 }
-@media (min-width: 768px) {
-  .navbar .navbar-collapse {
-    justify-content: space-between;
-  }
 
-  .navbar .nav-item {
-    margin-right: 15px;
-  }
-} 
-.carousel.slide {
-  display: flex;
-  flex-wrap: wrap;
+/* carousel */
+.carousel-item {
+  position: relative;
 }
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px; /* Space from bottom */
+  left: 15%; /* Adjust horizontal positioning */
+  right: 15%; /* Adjust horizontal positioning */
+  text-align: center; /* Center text */
+}
+
+.carousel-caption h1, 
+.carousel-caption h5 {
+  font-size: 2rem; /* Base size for headings */
+}
+
+.carousel-caption p {
+  font-size: 1rem; /* Base size for paragraph */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .carousel-item img {
-    height: 300px; 
-    object-fit: cover; 
+  .carousel-caption h1 {
+      font-size: 1.5rem; /* Smaller heading for mobile */
   }
 
-  .carousel-caption h1 {
-    font-size: 1.5rem; 
+  .carousel-caption h5 {
+      font-size: 1.2rem; /* Smaller subheading for mobile */
   }
 
   .carousel-caption p {
-    font-size: 1rem; 
+      font-size: 0.9rem; /* Smaller paragraph text for mobile */
   }
 }
 
-@media (max-width: 576px) {
-  .carousel-item img {
-    height: 250px; 
-  }
 
-  .carousel-caption h1 {
-    font-size: 1.2rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.9rem;
-  }
-}
-
-      
+/* link */
       .district{
         display: flex;
         flex-wrap: wrap;
@@ -94,30 +107,6 @@
        font-size: small;
       }
       
-@media (max-width: 768px) {
-  .district {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px 0;
-  }
-
-  .district a {
-    font-size: 0.9rem; 
-    margin: 5px 10px; 
-  }
-}
-
-@media (max-width: 576px) {
-  .district {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .district a {
-    font-size: 0.8rem;
-    margin: 5px;
-  }
-}
 
       .summer{
         font-size: larger;
@@ -147,14 +136,31 @@
       padding: 0px;
         
     }
-
-
-@media (max-width: 576px) {
-  body {
-    padding: 0px;
+    /* first card */
+    .card-container.grp {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; 
+      overflow-x: auto; 
+      padding: 37px;
+      background-color: beige;
   }
-}
-    
+  .card .grp{
+      min-width: 150px; 
+      margin: 0 10px; 
+      padding: 10px;
+      background-color:beige;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+  .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+  }
+
     .card-col {
         display: flex;
         justify-content: center;
@@ -165,7 +171,7 @@
     }
     
     .card {
-        background-color: white;
+
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 18rem;
@@ -219,59 +225,40 @@
         justify-content: center;
         margin-top: 20px;
     }
-@media (max-width: 768px) {
-  /* .card-col {
-   
-  } */
-
-  .card {
-    width: 50%; 
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction:column;
-    /* flex-wrap: wrap; */
-  }
-
-  .card:hover {
-    transform: scale(1.05); 
-  }
-
-  .btn-experience {
-    justify-content: center;
-    margin-top: 30px;
+    .cardname{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:small;
+    }
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .card.grp {
+      flex: 1 1 calc(33.333% - 20px); /* Three cards per row */
   }
 }
-@media (max-width: 576px) {
-  /* .card-col {
-    padding: 120px;
-    width: 100%; 
-    margin-bottom: 20px;
-    flex-direction:column;
+
+@media (max-width: 768px) {
+  .card.grp {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 412px) {
+  .card.grp {
+    flex: 1 1 calc(33.333% - 20px);/* Three cards per row on smaller screens */
   }
 
-  .card-body h5 {
-    font-size: 1rem;
+  .card-container.grp {
+      padding: 10px; /* Adjust padding */
   }
 
   .btn-primary {
-    font-size: 0.8rem;
-    /* padding: 8px 12px; */
-    .card:not(:first-child) {
-      margin-left: -80px;
+      width: auto; /* Maintain button width */
   }
-  
-  .card:hover {
-      transform: translateX(-180px);
-  }
- .card {
-  height: 50%;
-  width: 50%;
- }
-  } 
-
-
-
- 
+  h3 {
+    font-size: smaller;
+}
+}
+/* top destination */
  h3 {
   text-align: center;
   margin-bottom: 20px;
@@ -325,92 +312,23 @@
   padding: 10px 20px;
   font-size: 1.2rem;
 }
-
-
-@media (max-width: 1200px) {
-  .destination {
-      width: 200px;
-  }
-  
-  .img-fluid.topdest {
-      height: 180px;
-  }
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .destination {
-      width: 150px;
-  }
-
-  .img-fluid.topdest {
-      height: 150px;
-  }
-
-  .text .box {
-      font-size: 1rem;
-  }
-
-  .btn-primary {
-      font-size: 1rem;
-  }
+    .destination {
+      width: calc(22% - 20px);/* Two cards per row */
+    }
 }
 
-@media (max-width: 576px) {
-  .destination {
-      width: 100%;
-      margin-bottom: 15px;
-  }
+@media (max-width: 412px) {
+    .destination {
+        width: calc(22% - 20px); /* Four cards per row */
+    }
 
-  .img-fluid.topdest {
-      height: 200px;
-  }
-
-  .btn-primary {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-  }
+    .btn-explore {
+        margin-top: 20px; /* Adjust button margin */
+    }
 }
-
- 
-      .text{
-        color: white;
-        font-size: large;
-        position: absolute;
-        top: 80%;
-        left:0%; 
-        text-shadow: 0 0 10px black;
-        
-        display: inline-block;
-       
-      }
-      .box1{
-        padding-left: 68px;
-       
-      }
-      .box2{
-        padding-left:92px ;
-      }
-      .box3{
-        padding-left:61px ;
-      }
-      .box4{
-        padding-left:107px ;
-      }
-      .box5{
-        padding-left:123px ;
-      }
-      .box6{
-        padding-left:62px ;
-      }
-      .box7{
-        padding-left: 58px;
-      }
-      .box8{
-        padding-left:47px ;
-      }
-      .space{
-       left: 20px;
-      }
+/* things to do  */
       .btn-Explore{
         display: flex;
         justify-content: center;
@@ -477,27 +395,7 @@
 }
 
 
-@media (max-width: 768px) {
-  .cardthing {
-    width: 45%; 
-  }
-}
 
-
-@media (max-width: 480px) {
-  .cardthing {
-    width: 100%; 
-  }
-
-  .thingstodohead {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-
-  .btn-Explore {
-    margin-top: 10px;
-  }
-}
 .img-fluid.things{
   height: 236px;
   width: 418px;
@@ -515,6 +413,27 @@
   background-size: contain;
   
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cardthing {
+      width: calc(45% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 412px) {
+  .cardthing {
+      width: calc(30% - 20px); /* Three cards per row on smaller screens */
+  }
+
+  .btn-Explore {
+      padding: 10px; /* Adjust button padding */
+  }
+
+  .things-todo-container {
+      padding: 10px; /* Adjust container padding */
+  }
+}
+/* festival */
 .fest{
   display: flex;
  justify-content: center;
@@ -525,7 +444,7 @@
  margin-bottom: 20px;
  text-shadow:0 0 10px rgb(91, 17, 17) ;
 }
-        
+   /* footer      */
    
 .footer-container {
   background-color: #2c3e50;
@@ -600,14 +519,4 @@
   border-top: 1px solid #7f8c8d;
   font-size: 14px;
   color: #bdc3c7;
-}
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-section {
-    margin-bottom: 20px;
-  }
 }
