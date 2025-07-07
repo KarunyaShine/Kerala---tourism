@@ -1,5 +1,5 @@
-var email=document.getElementById("email");
-var paswd=document.getElementById("paswd");
+var email=document.getElementById("hello");
+var paswd=document.getElementById("hi");
 function validation()
 {
     if(email.value.trim()=='')
